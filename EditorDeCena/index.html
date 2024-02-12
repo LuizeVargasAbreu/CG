@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trabalho 1 - Editor de Cena</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Editor de Cena</h1>
+    </header>
+
+    <div class="editor_cena">
+        <section id="left-menu">
+            <div id="menu1">
+                <h1>Seleção de Modelos</h1>
+                <ul id="models-selected">
+                </ul>
+            </div>
+
+            <div id="menu2">
+                <h1>Editar transformações</h1>
+                <div id="uiContainer">
+                    <div id="ui">
+                        <div id="x"></div>
+                        <div id="y"></div>
+                        <div id="rotation"></div>
+                        <div id="scalaX"></div>
+                        <div id="scalaY"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cena">
+            <div id="buttonContainer">
+                <button id="btnCarregar" onclick="document.getElementById('fileInput').click()">Carregar</button>
+                <input type="file" id="fileInput" style="display: none;" onchange="loadScene(this)">
+                <button id="btnSalvar" onclick="saveScene()">Salvar</button>
+                <button id="btnLimpar" onclick="clearScene()">Limpar</button>
+            </div>
+            <canvas id="canvas"></canvas>
+        </section>
+
+        <section class="right-menu">
+            <ul id="list-models">
+            </ul>
+        </section>
+    </div>
+
+    <script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
+    <script src="https://webgl2fundamentals.org/webgl/resources/m4.js"></script>
+    <script src="https://webgl2fundamentals.org/webgl/resources/webgl-utils.js"></script>
+    <script src="https://webgl2fundamentals.org/webgl/resources/webgl-lessons-ui.js"></script>
+    <script type="module" src="js/webgl.js"></script>
+    <script type="module" src="js/utils.js"></script>
+    <script type="module" src="js/carregarObj.js"></script>
+    <!--     <script src="js/M4.js"></script>-->
+    <script type="module" src="script.js"></script>
+    <script type="module" src="selecionarModelos.js"></script>
+
+</body>
+
+</html>
