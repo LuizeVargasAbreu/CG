@@ -149,12 +149,12 @@ export async function main(model, canvas, { translation, rotation, scale }) {
 
 // Função que aplica as transformações no modelo
 export function applyTransformations(model, translation, rotation, scale) {
-    // Atualize as transformações do modelo com base nos parâmetros fornecidos
+    // Atualiza as transformações do modelo com base nos parâmetros fornecidos
     model.translation = translation;
     model.rotation = rotation;
     model.scale = scale;
 
-    // Renderize o modelo com as novas transformações
+    // Renderiza o modelo com as novas transformações
     renderModel(model);
 }
 

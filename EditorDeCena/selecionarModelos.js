@@ -1,21 +1,25 @@
 import { main, applyTransformations } from "./script.js";
 
 const models = [
-    { path: 'obj/arrow_teamBlue.obj' },
-    { path: 'obj/ball_teamBlue.obj' },
-    { path: 'obj/blaster_teamBlue.obj' },
-    { path: 'obj/barrierFloor.obj' },
-    { path: 'obj/bomb_teamBlue.obj' },
-    { path: 'obj/bow_teamBlue.obj' },
+    { path: 'obj/archeryrange.obj' },
+    { path: 'obj/bridge.obj' },
+    { path: 'obj/castle.obj' },
+    { path: 'obj/detail_hill.obj' },
+    { path: 'obj/house.obj' },
+    { path: 'obj/market.obj' },
+    { path: 'obj/mill.obj' },
+    { path: 'obj/well.obj' },
 ];
 
 const nameModels = [
-    "Flecha Time Azul",
-    "Bola Time Azul",
-    "Blaster Time Azul",
-    "Barreira Floor",
-    "Bomba Time Azul",
-    "Bow Time Azul",
+    "Campo de Tiro ao Alvo",
+    "Ponte",    
+    "Castelo",
+    "Floresta e Colina",
+    "Casa",
+    "Mercadinho",
+    "Moinho",
+    "Poço",
 ]
 
 let translation = [150, 100];
