@@ -1,0 +1,49 @@
+/* @import url("https://webgl2fundamentals.org/webgl/resources/webgl-tutorials.css"); */
+body {
+  margin: 0;
+  background-color: #aaa;
+  font-family: Sans-Serif;
+}
+
+canvas {
+  display: block;
+  background-color: #fff;
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+}
+
+#uiContainer {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  z-index: 3;
+  font-family: monospace;
+  background-color: #aaa;
+
+  text-shadow:
+    -1px -1px 0 #FFF,
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF;
+}
+
+#ui {
+  opacity: 0.8;
+  padding: 10px;
+  width: 200px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  width: 3cm;
+  height: 1cm;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+div {
+  padding-top: 10px;
+}
